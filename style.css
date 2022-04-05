@@ -1,0 +1,342 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box
+    }
+    
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 700;
+    }
+    /* common css end*/
+
+    .container{
+        width:  1170px;
+        margin: 0 auto;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text_center{
+        text-align: center;
+    }
+
+    /*nav section start */
+    nav{
+        background-color: #131e29;
+    }
+    nav .row{
+        align-items: center;
+    }
+    nav .logo{
+        width: 30%;
+    }
+    nav .logo img{
+        display: block;
+    }
+    nav .menu{
+        width: 70%;
+    }
+    nav .menu ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav .menu ul li a{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        padding: 32px 25px;
+        transition: .4s;
+    } 
+    nav .menu ul li:hover a{
+        color: #45bcf4;
+    }
+    
+    /* //nav section end */
+
+    /* banner section start*/
+/* Banner Section Css Start */
+#banner{
+    background-image: url(./img/banner.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+ }
+ #banner .container,
+ #banner .container .row{
+    height: 100%;
+ }
+ #banner .row{
+    align-items: center;
+ }
+ #banner .banner_img{
+    width: 40%;
+    background-color: red;
+ }
+ #banner .banner_img img{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+ }
+ #banner .banner_content{
+    width: 60%;
+    padding-left: 50px;
+ }
+ #banner .banner_content .banner_btn a{
+    display: inline-block;
+  padding: 15px 25px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 37px;
+  transition: all 0.5s linear;
+  box-shadow: 0 3px 0 rgba(39, 118, 151, 0);
+ }
+ #banner .banner_content .banner_btn a:hover{
+    background-color: #4bcaff;
+    border-color: #4bcaff;
+    box-shadow: 0 3px 0 rgba(39, 118, 151, 1);
+ }
+ #banner .banner_app_btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+ }
+ #banner .banner_app_btn i{
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #181c22;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #4bcaff;
+ }
+ /* //Banner Section Css End */
+ /* Features Section Css Start */
+#features {
+    background-color: #F9F9F9;
+    padding: 40px;
+  }
+  
+  #features .feature_content{
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  #features .feature_content h2 {
+    font-size: 36px;
+    color: #414042;
+  }
+  
+  #features .feature_content p {
+    font-size: 20px;
+    color: #414042;
+  }
+  
+  #features .container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  #features .row{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  
+  #features .row .feature_content1{
+    width: 25%;
+    text-align: center;
+  }
+  
+  #features .row .feature_content1 .icon_img{
+    background-color: turquoise;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin-left: 72px;
+    line-height: 140px;
+  }
+  
+  #features .row .feature_content1 .icon_img i{
+    line-height: 140px;
+    color: #f9f9f9;
+  }
+  
+  #feature .row .feature_content1 h4{
+    font-size: 15px;
+    color: #414042;
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+  
+  #features .row .features_content1 h4:hover {
+    color: #40E0D0;
+    cursor: pointer;
+  }
+  
+  #features .row .feature_content1 p {
+    font-size: 13px;
+    color: #414042;
+    padding: 0 22px;
+    text-align: center;
+  }
+  
+  /* //Features Section Css End */
+  /*--Gallery CSS Start--*/
+  
+  #gellary {
+    background-color: #fff;
+    padding: 40px;
+  }
+  
+  #gellary .gallery_header {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  #gellary .gallery_header h2 {
+    font-size: 36px;
+    color: #414042;
+  }
+  
+  #gellary .gallery_header p {
+    font-size: 20px;
+    color: #414042;
+  }
+  
+  #gellary .container {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  
+  #gellary .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  
+  #gellary .row .gallery_content {
+    width: 25%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  #gellary .row .gallery_content .screen {
+    background-color: turquoise;
+    position: relative;
+    width: 100%;
+    height: 205px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  #gellary .row .gallery_content .screen::after {
+    position: absolute;
+    content: '';
+    background: rgba(75, 202, 255, .4);
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 8px;
+  }
+  
+  #gellary .row .gallery_content .screen p {
+    background: #000;
+    color: #40E0D0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  
+  #gellary .row .gallery_content .para {
+    font-size: 13px;
+    color: #414042;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  
+  /*---Gallery CSS End--*/
+  
+  /*---Slider CSS Start--*/
+  
+  #slider .container {
+    background: url(./img/B.jpg);
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  #slider .container::after {
+    position: absolute;
+    content: '';
+    background: rgba(75, 202, 255, .4);
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  #slider .container .row {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #slider .container .row h2 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  
+  #slider .container .row h2 span {
+    font-weight: 800;
+    font-size: 50px;
+  }
+  
+  #slider .container .row p {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 240px;
+    text-align: justify;
+  }
+  
+  
+  /*---Slider CSS End--*/
+  Write to বাঁধন সেন
+  
